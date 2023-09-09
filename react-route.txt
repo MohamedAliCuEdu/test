@@ -1,0 +1,33 @@
+|| react routing:
+
+----> Router: <-----
+- Router is group of components can be used:
+- comp => [BrowserRouter, Routes, Route, Link, Switch].
+
+-- [app.jsx]:
+
+-- in [nav]:
+- import Link
+- Link => <Link to="path">name</Link>
+
+[1] - in index file:
+BrowserRouter => wrapping all app:
+
+import {BrowserRouter} from 'react-router-dom';
+<BrowserRouter>
+  <App />
+</BrowserRouter>
+__________________________________
+[2] - in app file:
+
+1- import comp of pages:
+2- make route for every comp by [Route] and wrapping all in [Routes]:
+--- <Route path="/name of path || *" component={comp} || element={}>
+
+- The Home component has an [index] attribute => That specifies this as the default
+- or => using switch => wrap all route in switch
+- or => use exact attr
+- Setting the path to * => for any undefined URLs => This is great for a 404 error page.
+
+  
+__________________________________
